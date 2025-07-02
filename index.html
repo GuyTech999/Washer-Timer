@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <audio id="alertSound" src="alert.mp3" preload="auto"></audio>
+
   <div class="container">
     <h1>ระบบจองเครื่องซักผ้า</h1>
 
@@ -17,10 +20,34 @@
       <div class="time-info" style="display:none;">
         <p>เริ่มใช้: <span class="start-time"></span></p>
         <p>สิ้นสุด: <span class="end-time"></span></p>
+        <p class="countdown"></p> <!-- นี่คือเวลานับถอยหลัง -->
       </div>
     </div>
     
   </div>
+
+  <div class="container">
+    <h1>ระบบจองเครื่องซักผ้า</h1>
+
+    <div class="machine" id="machine2">
+      <h2>เครื่องซักผ้า #2</h2>
+      <p class="status">สถานะ: <span class="status-text">ว่าง</span></p>
+      <button onclick="toggleBooking('machine2')">จองเครื่อง</button>
+      <div class="time-info" style="display:none;">
+        <p>เริ่มใช้: <span class="start-time"></span></p>
+        <p>สิ้นสุด: <span class="end-time"></span></p>
+        <p class="countdown"></p> <!-- นี่คือเวลานับถอยหลัง -->
+      </div>      
+    </div>
+    
+  </div>
+
+  <body>
+    ...
+    <audio id="alertSound" src="alert.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+  </body>
+  
 
   <script src="script.js"></script>
 </body>
